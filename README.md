@@ -12,20 +12,28 @@ predict.py to predict flower name from an image.
 
 # Examples train.py
 Help:
-
+```bash
 python ./train.py -h
+```
 
-Train on CPU with default vgg16:
-
+Train on **CPU** with default **vgg16**:
+```bash
 python ./train.py ./flowers/train/
+```
 
 
 # Examples predict.py
 Help
+```bash
 python ./predict.py -h
+```
 
 Basic Prediction
+```bash
 python ./predict.py flowers/valid/5/image_05192.jpg checkpoint.pth
+```
 
 Prediction with GPU
-python ./predict.py flowers/valid/5/image_05192.jpg checkpoint.pth --g
+```bash
+python ./predict.py flowers/valid/5/image_05192.jpg checkpoint.pth --gpu
+```
